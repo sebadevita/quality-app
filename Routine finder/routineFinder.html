@@ -11,7 +11,7 @@
 <body>
  
 
-    <div class="main-container">
+    <div>
         <header class="header-container">
             <div>
                 <h1 class="title">Quality App</h1>
@@ -24,12 +24,22 @@
             </div>
         </header>
 
-            <div class="searcher-container">
+                <div class="searcher-container">
                 <div>
-                    <input class="searcher" type="text" name="" placeholder="Buscar..." >
-                        
+                    <input class="searcher" type="text" name="" placeholder="Buscar..." >       
                 </div>
-                    <i class="fa-solid fa-magnifying-glass"></i> 
+                    <i class="fa-solid fa-magnifying-glass" id="searcher-icon"></i> 
+            </div>
+            
+            <div class="main-container">
+                <div class="results-container">
+                    <div class="results-title">Resultados de la búsqueda</div>
+                <div class="results-detail-container">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <p class="results-quantity">Total: 5</p> 
+                </div>
+                </div>
+
             </div>
         
     </div>
