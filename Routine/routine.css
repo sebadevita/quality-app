@@ -4,6 +4,7 @@
   --primary-color: #04359e;
   --primary-color-light: #c4d4fa;
   --secondary-color: #767676;
+  --secondary-color-light: #ccc7c7;
 }
 
 body {
@@ -83,7 +84,6 @@ body {
 }
 
 .routine-details-container {
-  border: 1px solid red;
   width: 400px;
 }
 
@@ -110,7 +110,36 @@ body {
 }
 
 .routine-exercices-container {
-  border: 1px solid green;
   width: 400px;
   margin-top: 5px;
+  border: 1px solid green;
+  padding-top: 3px;
+}
+
+table {
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+table,
+th,
+td {
+  border: 1px solid var(--secondary-color-light);
+  column-width: 175px;
+  text-align: center;
+  height: 25px;
+}
+
+.column-tag {
+  font-weight: bold;
+  background-color: #e5e5e5;
+}
+
+.fa-trash-can {
+  margin: 10px;
+  font-size: 15px;
+  color: rgb(233, 40, 40);
+}
+
+.exercices-table-row {
 }
