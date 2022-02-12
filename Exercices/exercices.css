@@ -17,7 +17,7 @@ body {
 .main-container {
   display: flex;
   flex-direction: column;
-  height: 82.9vh;
+  height: 81vh;
   justify-content: center;
   align-items: center;
 }
@@ -75,7 +75,6 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
 }
 
 .exercise-title-container {
@@ -114,7 +113,6 @@ body {
 
 .card-content-container {
   display: flex;
-  border: 1px solid pink;
   height: 350px;
   width: 500px;
   justify-content: center;
@@ -125,10 +123,13 @@ body {
   display: flex;
   flex-direction: column;
   width: 400px;
+  height: 200px;
 }
 
 label {
   color: rgb(102, 100, 100);
+  margin-bottom: 5px;
+  margin-top: 10px;
 }
 
 input[type="text"] {
@@ -141,11 +142,17 @@ input[type="text"] {
   background-color: var(--background-color);
 }
 
+.series-container {
+  display: flex;
+}
+
 input[type="checkbox"] {
   border-radius: 5px;
   height: 15px;
   width: 15px;
-  margin-bottom: 10px;
+  margin-top: 10px;
+  cursor: pointer;
+  background-color: black;
 }
 
 select {
@@ -153,9 +160,7 @@ select {
   border: 0.1px solid var(--primary-color);
   height: 30px;
   width: 200px;
-  margin-top: 5px;
   box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.2);
-  margin-bottom: 10px;
   background-color: var(--background-color);
 }
 
@@ -163,6 +168,7 @@ select {
   display: flex;
   flex-direction: column;
   width: 400px;
+  height: 200px;
 }
 
 footer {
