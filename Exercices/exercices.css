@@ -16,6 +16,7 @@ body {
 
 .main-container {
   display: flex;
+  flex-direction: column;
   height: 82.9vh;
   justify-content: center;
   align-items: center;
@@ -31,23 +32,39 @@ body {
   color: white;
 }
 
-.text-container {
+.header-text-container {
   display: flex;
   margin: 10px;
   align-items: center;
 }
 
-.title {
+.header-title {
   font-size: 30px;
   font-style: oblique;
   margin: 20px;
   cursor: pointer;
 }
 
-.text {
+.header-text {
   margin: 10px;
   cursor: pointer;
   font-size: 14px;
+}
+
+.main-title-container {
+  display: flex;
+  align-items: center;
+  width: 800px;
+}
+.title {
+  color: var(--secondary-color);
+  text-decoration: underline var(--secondary-color);
+  margin-inline: 10px;
+}
+
+#arrow {
+  color: var(--secondary-color);
+  margin-right: 10px;
 }
 
 .exercise-card {
@@ -57,7 +74,8 @@ body {
   border-radius: 5px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  align-items: center;
+  justify-content: center;
 }
 
 .exercise-title-container {
@@ -92,6 +110,59 @@ body {
 .fa-stopwatch {
   color: white;
   font-size: 16px;
+}
+
+.card-content-container {
+  display: flex;
+  border: 1px solid pink;
+  height: 350px;
+  width: 500px;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-left-container {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+}
+
+label {
+  color: rgb(102, 100, 100);
+}
+
+input[type="text"] {
+  border-radius: 5px;
+  border: 0.1px solid var(--primary-color);
+  height: 25px;
+  width: 100%;
+  box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.2);
+  width: 200px;
+  background-color: var(--background-color);
+}
+
+input[type="checkbox"] {
+  border-radius: 5px;
+  height: 15px;
+  width: 15px;
+  margin-bottom: 10px;
+}
+
+select {
+  border-radius: 5px;
+  border: 0.1px solid var(--primary-color);
+  height: 30px;
+  width: 200px;
+  margin-top: 5px;
+  box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.2);
+  margin-bottom: 10px;
+  background-color: var(--background-color);
+}
+
+.card-right-container {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
 }
 
 footer {
