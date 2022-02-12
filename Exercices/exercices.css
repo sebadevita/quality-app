@@ -171,6 +171,32 @@ select {
   height: 200px;
 }
 
+.buttons-container {
+  margin-bottom: 10px;
+}
+
+.button-primary {
+  background-color: var(--primary-color);
+  border: none;
+  border-radius: 5px;
+  color: white;
+  height: 35px;
+  width: 75px;
+  font-family: var(--font);
+  cursor: pointer;
+}
+
+.button-secondary {
+  border: 1px solid var(--primary-color);
+  border-radius: 5px;
+  color: var(--primary-color);
+  height: 35px;
+  width: 75px;
+  font-family: var(--font);
+  cursor: pointer;
+  margin-right: 20px;
+}
+
 footer {
   display: flex;
   align-items: center;
