@@ -2,6 +2,7 @@
   --background-color: #f3f5f7;
   --font: "Open Sans", sans-serif;
   --primary-color: #04359e;
+  --primary-color-hover: #0940b6;
   --primary-color-light: #c4d4fa;
   --secondary-color: #767676;
   --secondary-color-light: #ccc7c7;
@@ -55,6 +56,9 @@ body {
   height: 450px;
   border-radius: 5px;
   box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .routine-information-container {
@@ -153,7 +157,7 @@ td {
   align-items: center;
 }
 
-button {
+.button-primary {
   background-color: var(--primary-color);
   border: none;
   border-radius: 5px;
@@ -161,6 +165,22 @@ button {
   height: 35px;
   width: 75px;
   font-family: var(--font);
+  cursor: pointer;
+}
+
+.button-secondary {
+  border: 1px solid var(--primary-color);
+  border-radius: 5px;
+  color: var(--primary-color);
+  height: 35px;
+  width: 75px;
+  font-family: var(--font);
+  cursor: pointer;
+  margin-right: 20px;
+}
+
+.button-primary:hover {
+  background-color: var(--primary-color-hover);
 }
 
 .fa-heart-pulse {
@@ -173,4 +193,36 @@ button {
   margin-left: 10px;
   margin-right: 5px;
   font-size: 20px;
+}
+
+.muscle-groups-container {
+  display: flex;
+  align-items: center;
+  width: 400px;
+  margin-top: 10px;
+}
+
+.muscle-groups-title {
+  font-size: 14px;
+  margin-right: 10px;
+}
+
+.muscle-groups {
+  background-color: var(--primary-color);
+  margin-right: 5px;
+  margin-top: 10px;
+  color: white;
+  border-radius: 10px;
+  width: 50px;
+  height: 20px;
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.buttons-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
 }
