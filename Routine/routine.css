@@ -112,7 +112,6 @@ body {
 .routine-exercices-container {
   width: 400px;
   margin-top: 5px;
-  border: 1px solid green;
   padding-top: 3px;
 }
 
@@ -141,5 +140,37 @@ td {
   color: rgb(233, 40, 40);
 }
 
-.exercices-table-row {
+.exercices-information-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 10px;
+  margin-right: 40px;
+}
+
+.results-info-container {
+  display: flex;
+  align-items: center;
+}
+
+button {
+  background-color: var(--primary-color);
+  border: none;
+  border-radius: 5px;
+  color: white;
+  height: 35px;
+  width: 75px;
+  font-family: var(--font);
+}
+
+.fa-heart-pulse {
+  color: rgb(233, 40, 40);
+  margin-inline: 5px;
+  font-size: 20px;
+}
+
+.fa-stopwatch {
+  margin-left: 10px;
+  margin-right: 5px;
+  font-size: 20px;
 }
