@@ -4,6 +4,7 @@
   --primary-color: #04359e;
   --primary-color-light: #c4d4fa;
   --secondary-color: #767676;
+  --secondary-color-light: #ccc7c7;
 }
 
 body {
@@ -47,66 +48,35 @@ body {
   margin: auto;
   margin-top: 20px;
   align-items: center;
-  border: 4px solid var(--secondary-color);
+  border: 1px solid var(--secondary-color-light);
   width: 700px;
   height: 100%;
 }
 
-.searcher-container {
-  background-color: var(--primary-color-light);
-  height: 50px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.searcher {
-  border: none;
-  border-top-left-radius: 5px;
-  border-bottom-left-radius: 5px;
-  width: 600px;
-  height: 25px;
-}
-
-#searcher-icon {
-  background-color: var(--secondary-color);
-  width: 25px;
-  height: 28px;
-  text-align: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border: none;
-  border-top-right-radius: 5px;
-  border-bottom-right-radius: 5px;
-  color: white;
-  cursor: pointer;
-}
-
-.results-container {
+.card-header-container {
   display: flex;
   align-items: center;
   justify-content: space-between;
   background-color: var(--secondary-color);
-  width: 101%;
+  width: 100.2%;
   height: 60px;
 }
 
-.results-title {
+.card-title {
   font-size: 20px;
   margin: 10px;
   color: white;
   font-weight: bold;
 }
 
-.results-detail-container {
+.detail-container {
   display: flex;
   align-items: center;
   color: white;
   font-weight: bold;
 }
 
-.results-quantity {
+.quantity {
   margin: 10px;
 }
 
