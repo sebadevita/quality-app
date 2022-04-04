@@ -13,14 +13,6 @@ body {
   font-family: var(--font);
 }
 
-.main-container {
-  display: flex;
-  flex-direction: column;
-  height: 81vh;
-  justify-content: center;
-  align-items: center;
-}
-
 .header-container {
   display: flex;
   align-items: center;
@@ -61,55 +53,6 @@ body {
   margin-inline: 10px;
 }
 
-#arrow {
-  color: var(--secondary-color);
-  margin-right: 10px;
-}
-
-.profile-card {
-  border: 1px solid var(--secondary-color-light);
-  width: 800px;
-  height: 450px;
-  border-radius: 5px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.profile-title-container {
-  width: 780px;
-  height: 50px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 10px;
-  background-color: var(--secondary-color);
-  border-top-left-radius: 5px;
-  border-top-right-radius: 5px;
-}
-
-.profile-title {
-  color: white;
-  font-size: 25px;
-}
-
-.profile-duration-container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.profile-duration {
-  color: white;
-  font-size: 18px;
-  margin-left: 5px;
-}
-
-.fa-stopwatch {
-  color: white;
-  font-size: 16px;
-}
-
 .buttons-container {
   margin-bottom: 10px;
 }
@@ -134,6 +77,37 @@ body {
   font-family: var(--font);
   cursor: pointer;
   margin-right: 20px;
+}
+
+.card {
+  display: grid;
+  margin: 80px;
+  grid-template-columns: repeat(12, 1fr);
+}
+
+.card-header {
+  grid-area: 1 / 1 / auto / 13;
+  background-color: var(--secondary-color);
+  display: flex;
+  align-items: center;
+  padding: 0 10px;
+}
+
+.card-header > .icon {
+  margin-left: auto;
+  padding: 10px;
+}
+
+.article-personal-info {
+  grid-area: 3 / 1 / auto / 5;
+}
+
+.article-training-days {
+  grid-area: 3/ 5 / auto / 10;
+}
+
+.article-friends {
+  grid-area: 3/ 10 / auto/ 13;
 }
 
 footer {
